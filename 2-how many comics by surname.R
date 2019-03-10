@@ -1,3 +1,7 @@
+library(readxl)
+library(ggplot2)
+library(tibble)
+library(tidyverse)
 #----------------------------------
 #2 how many comics by surname
 #----------------------------------
