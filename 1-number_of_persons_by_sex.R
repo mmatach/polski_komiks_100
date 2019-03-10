@@ -4,7 +4,7 @@ library(ggplot2)
 library(tibble)
 library(tidyverse)
 #----------------------------------
-#1Stacked bar chart_number_of_persons_by_sex
+#1number_of_persons_by_sex
 #----------------------------------
 plk_os<-readxl::read_xlsx("polski_komiks.xlsx")
 plk_os$nazwisko<-NULL
