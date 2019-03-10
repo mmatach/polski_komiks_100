@@ -1,4 +1,4 @@
-# Polish comic scene on a 100th Anniversary 
+# Polish comic scene on a 100th Anniversary (work in progress)
 *Polska scena komiksowa na 100-lecie*
 
 
