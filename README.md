@@ -4,8 +4,8 @@
 
 First comic was published in 1919. I was interested in how polish comic scene looks right now. How many women are there? How many people actually? 
 
-I'm not able to count everything because some things weren't catalogued.
-<br>Counted only things published on paper (so no internet-comics). No single illustration, no covers.
+<br>Counted only things published on paper (so no internet comics). Also no single illustration(s), no covers.
+<br>I'm not able to count everything because some things weren't catalogued. Data before 1990 definitely aren't complete, even old(er) newspaper/magazine comics are not included (i.e. Ha-Ga comics) due to lack of data. I plan to mention about them in an infographic.
 
 I'm using below sources:
 <br>http://alejakomiksu.com/autorzy/A/
