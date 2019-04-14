@@ -15,3 +15,14 @@ I'm using below sources:
 <br>https://gindi.pl/
 <br>Magazyn Pismo
 <br>https://www.jpf.com.pl/
+
+
+Solved, somehow, problem with pre-second war authors. They mostly published in daily and weekly magazines and data is... well, there's no neat database, so:
+<br>1.If I can't tell exact/aprox. number of issues with published comics, title is counted as '1' in one year.
+<br>2.Weekly drawings (like Ha-Ga's cartoons) are counted as '50' because according to Wikipedia she published two drawings in each of weekly edition of a magazine.
+<br>3.Struzik Franciszek's comic really had over 2000+ issues. It was a daily comic.
+<br>4.Dates can also be aprox. so sometimes I evenly distributed number of comics throughout whole period in which magazine/paper existed or that comic was printed.
+<br>Data based on:
+<br>http://www.tytusdezoo.com.pl/xhtml/komiks/komiks.html
+<br>"Dawny komiks polski" reprint series from Wydawnictwo Komiksowe
+<br>Wikipedia
