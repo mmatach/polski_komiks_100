@@ -47,12 +47,6 @@ rok_num<-as.numeric(as.character(plk_os_df_rbind$rok))
 plk_os_df_rbind<-cbind(plk_os_df_rbind, rok_num)
 plk_os_df_rbind$rok<-NULL
 
-#streamgraph
-streamgraph(plk_os_df_rbind, key="plec", value="ilosc", date="rok_num")%>%
-  sg_fill_manual(c("#9F3881", "#61B6C5", "black"))%>%
-  sg_axis_y(0)%>%
-  sg_axis_x(10, "rok", "%Y")
-
 #for stacked bar chart
 Kto<-plk_os_df_rbind$plec
 Ile<-plk_os_df_rbind$ilosc
@@ -69,20 +63,7 @@ ggplot(plk_os_df_rbind, aes(fill=Kto, y=Ile, x=Rok)) +
         panel.background=element_blank(), panel.grid.major.x=element_blank(),
         axis.ticks.y = element_blank())+
   ggtitle("Liczba polskich twórców i twórczyń")
-
 #  scale_x_continuous(breaks=c(1990,1995,2000,2005,2010,2015,2020), limits=c(1990,2020))+
-# Stacked Percent bar chart
-ggplot(plk_os_df_rbind, aes(fill=Kto, y=Ile, x=Rok)) + 
-  geom_bar( stat="identity", position="fill")+
-  scale_fill_manual(values=c("#3b5998", "#9F3881", "black"))+
-  scale_x_continuous(breaks=c(1990,1995,2000,2005,2010,2015,2020), limits=c(1989,2020))+
-  theme(axis.title.x=element_blank(), axis.title.y=element_blank(),
-        panel.grid.major.y=element_line(colour="#babfc4"),
-        panel.background=element_blank(), panel.grid.major.x=element_blank(),
-        axis.ticks.y = element_blank())+
-  ggtitle("Liczba polskich twórców i twórczyń [proporcje]")
-
-geom_text(aes(label=Ile), colour="white", size=2)
 
 
 
