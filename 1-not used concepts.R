@@ -47,43 +47,6 @@ rok_num<-as.numeric(as.character(plk_os_df_rbind$rok))
 plk_os_df_rbind<-cbind(plk_os_df_rbind, rok_num)
 plk_os_df_rbind$rok<-NULL
 
-
-
-# spiral bar plot/condegram
-
-
-
-
-ggplot(plk_os_df_rbind, aes(fill=Kto, y=Ile, x=Rok)) + 
-  geom_bar(stat="identity", width=0.8)+
-  scale_fill_manual(values=c("#3b5998", "#9F3881", "black"))+
-  geom_text(aes(label=Ile),position = position_stack(0.80), colour="white", size=2)+
-  theme(axis.title.x=element_blank(), axis.title.y=element_blank(),
-        panel.grid.major.y=element_line(colour="#babfc4"),
-        panel.background=element_blank(), panel.grid.major.x=element_blank(),
-        axis.ticks.y = element_blank())+
-  ggtitle("Liczba polskich twórców i twórczyn")
-
-#Stacked bar chart
-#for stacked bar chart
-Kto<-plk_os_df_rbind$plec
-Ile<-plk_os_df_rbind$ilosc
-Rok<-plk_os_df_rbind$rok_num
-
-ggplot(plk_os_df_rbind, aes(fill=Kto, y=Ile, x=Rok)) + 
-  geom_bar(stat="identity", width=0.8)+
-  scale_fill_manual(values=c("#3b5998", "#9F3881", "black"))+
-  scale_y_continuous(breaks=c(0,50,100,150, 200, 250, 300, 350))+
-  geom_text(aes(label=Ile),position = position_stack(0.80), colour="white", size=2)+
-  theme(axis.title.x=element_blank(), axis.title.y=element_blank(),
-        panel.grid.major.y=element_line(colour="#babfc4"),
-        panel.background=element_blank(), panel.grid.major.x=element_blank(),
-        axis.ticks.y = element_blank())+
-  ggtitle("Liczba polskich twórców i twórczyn")
-
-# scale_x_continuous(breaks=c(1990,1995,2000,2005,2010,2015,2020), limits=c(1990,2020))+
-
-
 #NOT USED - streamgraph
 streamgraph(plk_os_df_rbind, key="plec", value="ilosc", date="rok_num")%>%
   sg_fill_manual(c("#9F3881", "#61B6C5", "black"))%>%
@@ -104,6 +67,4 @@ ggplot(plk_os_df_rbind, aes(fill=Kto, y=Ile, x=Rok)) +
         panel.grid.major.y=element_line(colour="#babfc4"),
         panel.background=element_blank(), panel.grid.major.x=element_blank(),
         axis.ticks.y = element_blank())+
-  ggtitle("Liczba polskich twórców i twórczyn [proporcje]")
-
-geom_text(aes(label=Ile), colour="white", size=2)
+  ggtitle("Liczba polskich twÃ³rcÃ³w i twÃ³rczyn [proporcje]")
