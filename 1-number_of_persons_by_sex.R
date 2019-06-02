@@ -15,7 +15,7 @@ plk_os_nw<-plk_os[which(plk_os$plec=="nw"),]
 plk_os_k$plec<-NULL
 plk_os_m$plec<-NULL
 plk_os_nw$plec<-NULL
-#change number of comics
+#change number of comics - so it would count persons in each year, not number of comics
 plk_os_k[plk_os_k >1] <-1
 plk_os_m[plk_os_m >1] <-1
 plk_os_nw[plk_os_nw >1] <-1
@@ -47,7 +47,27 @@ rok_num<-as.numeric(as.character(plk_os_df_rbind$rok))
 plk_os_df_rbind<-cbind(plk_os_df_rbind, rok_num)
 plk_os_df_rbind$rok<-NULL
 
-#for stacked bar chart
+##code for Spiral chart
+#change position of each type K/M/nw
+plk_spread<-spread(plk_os_df_rbind, plec, ilosc)
+#new column - adding
+plk_spread<-mutate(plk_spread, Ile=K+M+nw)
+#drop not needed columns
+plk_spread$M<-NULL
+plk_spread$K<-NULL
+plk_spread$nw<-NULL
+#adding id column
+plk_spread$id <- seq.int(nrow(plk_spread))
+#chart
+ggplot(plk_spread, aes(plk_spread$id %% 25, 
+                       2*plk_spread$id + Ile/2, height = Ile, fill = Ile)) + 
+  geom_tile() + 
+  scale_y_continuous(limits = c(-20, NA)) +
+  scale_x_continuous(breaks = NULL, minor_breaks = NULL, labels = rok_num) +
+  coord_polar() + theme_minimal()
+
+
+##for stacked bar chart
 Kto<-plk_os_df_rbind$plec
 Ile<-plk_os_df_rbind$ilosc
 Rok<-plk_os_df_rbind$rok_num
