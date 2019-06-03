@@ -62,14 +62,13 @@ plk_spread$id <- seq.int(nrow(plk_spread))
 ggplot(plk_spread, aes(plk_spread$id %% 25, 
                        2*plk_spread$id + Ile/2, height = Ile, fill = Ile)) + 
   geom_tile() + 
-  scale_y_continuous(limits = c(-20, NA)) +
+  scale_y_continuous(limits = c(0, NA)) + #narrowness
   scale_x_continuous(breaks = NULL, minor_breaks = NULL, labels = rok_num) +
   coord_polar() +  
   theme(axis.title.x=element_blank(), axis.title.y=element_blank(),
         panel.grid.major.y=element_blank(),
         panel.background=element_blank(), panel.grid.major.x=element_blank(),
-        axis.ticks.y = element_blank())+
-  ggtitle("Liczba polskich twórców i twórczyń w PL komiksie")
+        axis.ticks.y = element_blank())
 
 
 ##for stacked bar chart
@@ -80,15 +79,13 @@ Rok<-plk_os_df_rbind$rok_num
 # Stacked bar chart
 ggplot(plk_os_df_rbind, aes(fill=Kto, y=Ile, x=Rok)) + 
   geom_bar(stat="identity", width=0.8)+
-  scale_fill_manual(values=c("#3b5998", "#9F3881", "black"))+
-  scale_y_continuous(breaks=c(0,50,100,150, 200, 250, 300, 350))+
-  geom_text(aes(label=Ile),position = position_stack(0.80), colour="white", size=2)+
+  scale_fill_manual(values=c("#214667", "#ee4642", "black"))+
+  scale_y_continuous(breaks=c(0,50,100,150, 200, 250, 300, 350,400), position="right")+
+  scale_x_continuous(breaks=c(1918,1930, 1940, 1950, 1960, 1970, 1980,1990, 2000, 2010, 2018))+
+  geom_text(aes(label=Ile),vjust=1.5, colour="white", size=2)+
   theme(axis.title.x=element_blank(), axis.title.y=element_blank(),
         panel.grid.major.y=element_line(colour="#babfc4"),
         panel.background=element_blank(), panel.grid.major.x=element_blank(),
-        axis.ticks.y = element_blank())+
-  ggtitle("Liczba polskich twórców i twórczyń")
-#  scale_x_continuous(breaks=c(1990,1995,2000,2005,2010,2015,2020), limits=c(1990,2020))+
-
-
-
+        axis.ticks.y = element_blank())
+# ggtitle("Liczba polskich twórców i twórczyń")
+#  scale_x_continuous(breaks=c(1990,1995,2000,2005,2010,2015,2020), limits=c(1990,2020))
