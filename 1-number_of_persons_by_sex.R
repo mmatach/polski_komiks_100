@@ -64,7 +64,12 @@ ggplot(plk_spread, aes(plk_spread$id %% 25,
   geom_tile() + 
   scale_y_continuous(limits = c(-20, NA)) +
   scale_x_continuous(breaks = NULL, minor_breaks = NULL, labels = rok_num) +
-  coord_polar() + theme_minimal()
+  coord_polar() +  
+  theme(axis.title.x=element_blank(), axis.title.y=element_blank(),
+        panel.grid.major.y=element_blank(),
+        panel.background=element_blank(), panel.grid.major.x=element_blank(),
+        axis.ticks.y = element_blank())+
+  ggtitle("Liczba polskich twórców i twórczyń w PL komiksie")
 
 
 ##for stacked bar chart
