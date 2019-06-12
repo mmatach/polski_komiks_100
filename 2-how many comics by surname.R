@@ -56,7 +56,7 @@ ggplot(plk_elim15, aes(y=plk_elim15$IloscPrac, x=fct_rev(plk_elim15$Nazwisko))) 
   geom_text(aes(label=IloscPrac), 
              color=ifelse(plk_elim15$Plec %in% c("M"), "#214667", "#ee4642"), size=3, hjust=-1)+
   geom_text(aes(label=Nazwisko), 
-            color=ifelse(plk_elim15$Plec %in% c("M"), "#214667", "#ee4642"), size=3, hjust=0)+
+            color=ifelse(plk_elim15$Plec %in% c("M"), "#214667", "#ee4642"), size=3, hjust=-0.5)+
   theme(axis.title.x=element_blank(), axis.title.y=element_blank(),
         panel.grid.major.y=element_blank(), panel.grid.major.x=element_line(colour="#d4d4d4"),
         panel.background=element_blank(),  
