@@ -23,38 +23,58 @@ plk_przedzialy_z_plcia[!complete.cases(plk_przedzialy_z_plcia$Plec),]
 #przedzialy
 #bins
 plk_przed_elim1<-plk_przedzialy_z_plcia[(plk_przedzialy_z_plcia$IloscOsob==1),] #=1
-plk_przed_elim2_4<-plk_przedzialy_z_plcia[(plk_przedzialy_z_plcia$IloscOsob>=2 & plk_przedzialy_z_plcia$IloscOsob<=4),] #2-4
-plk_przed_elim5_9<-plk_przedzialy_z_plcia[(plk_przedzialy_z_plcia$IloscOsob>=5 & plk_przedzialy_z_plcia$IloscOsob<=9),] #5-9
-plk_przed_elim10_14<-plk_przedzialy_z_plcia[(plk_przedzialy_z_plcia$IloscOsob>=10 & plk_przedzialy_z_plcia$IloscOsob<=14),] #10-14
+plk_przed_elim2_5<-plk_przedzialy_z_plcia[(plk_przedzialy_z_plcia$IloscOsob>=2 & plk_przedzialy_z_plcia$IloscOsob<=5),] #2-5
+plk_przed_elim6_14<-plk_przedzialy_z_plcia[(plk_przedzialy_z_plcia$IloscOsob>=6 & plk_przedzialy_z_plcia$IloscOsob<=14),] #10-14
 plk_przed_elim15<-plk_przedzialy_z_plcia[(plk_przedzialy_z_plcia$IloscOsob>=15),] #15+
 #usunac nazwiska z rzedow
 #remove surnames from rows
 rownames(plk_przed_elim1)<-NULL
-rownames(plk_przed_elim2_4)<-NULL
-rownames(plk_przed_elim5_9)<-NULL
-rownames(plk_przed_elim10_14)<-NULL
+rownames(plk_przed_elim2_5)<-NULL
+rownames(plk_przed_elim6_14)<-NULL
 rownames(plk_przed_elim15)<-NULL
-
-#dodaj kolumne z przedzialami A,B,C,D
-
 
 #zamienic wszystkie wartosci na 1
 #turn every value into 1
-plk_przed_elim2_4[plk_przed_elim2_4 >1] <-1
-plk_przed_elim5_9[plk_przed_elim5_9 >1] <-1
-plk_przed_elim10_14[plk_przed_elim10_14 >1] <-1
+plk_przed_elim2_4[plk_przed_elim2_5 >1] <-1
+plk_przed_elim6_14[plk_przed_elim6_14 >1] <-1
 plk_przed_elim15[plk_przed_elim15 >1] <-1
+
+#counting people in each group in bins
+p1<-plk_przed_elim1 %>% group_by(Plec) %>% summarise(a=sum(IloscOsob))
+p2<-plk_przed_elim2_5 %>% group_by(Plec) %>% summarise(a=sum(IloscOsob))
+p3<-plk_przed_elim6_14 %>% group_by(Plec) %>% summarise(a=sum(IloscOsob))
+p4<-plk_przed_elim15 %>% group_by(Plec) %>% summarise(a=sum(IloscOsob))
 
 #wykresy
 #charts
-ggplot(plk_przed_elim1, aes(fill=Plec, y=IloscOsob, x=Plec)) +
-  geom_bar( stat="identity")
+ggplot(plk_przed_elim1, aes(fill=Plec, y=IloscOsob, x=Plec))+
+  scale_fill_manual(values=c("#3b5998", "#9F3881", "black"))+
+  geom_bar( stat="identity")+
+  theme(axis.title.x=element_blank(), axis.title.y=element_blank(),
+        panel.grid.major.y=element_line(colour="#babfc4"),
+        panel.background=element_blank(), panel.grid.major.x=element_blank(),
+        axis.ticks.y = element_blank())
 
-ggplot(plk_przed_elim1_4, aes(fill=Plec, y=IloscOsob, x=Plec)) +
-  geom_bar( stat="identity")
+ggplot(plk_przed_elim1_5, aes(fill=Plec, y=IloscOsob, x=Plec)) +
+  scale_fill_manual(values=c("#3b5998", "#9F3881", "black"))+
+  geom_bar( stat="identity")+
+  theme(axis.title.x=element_blank(), axis.title.y=element_blank(),
+        panel.grid.major.y=element_line(colour="#babfc4"),
+        panel.background=element_blank(), panel.grid.major.x=element_blank(),
+        axis.ticks.y = element_blank())
 
-ggplot(plk_przed_elim5_14, aes(fill=Plec, y=IloscOsob, x=Plec)) +
-  geom_bar( stat="identity")
+ggplot(plk_przed_elim6_14, aes(fill=Plec, y=IloscOsob, x=Plec)) +
+  scale_fill_manual(values=c("#3b5998", "#9F3881", "black"))+
+  geom_bar( stat="identity")+
+  theme(axis.title.x=element_blank(), axis.title.y=element_blank(),
+        panel.grid.major.y=element_line(colour="#babfc4"),
+        panel.background=element_blank(), panel.grid.major.x=element_blank(),
+        axis.ticks.y = element_blank())
 
 ggplot(plk_przed_elim15, aes(fill=Plec, y=IloscOsob, x=Plec)) +
-  geom_bar( stat="identity")
+  scale_fill_manual(values=c("#3b5998", "#9F3881", "black"))+
+  geom_bar( stat="identity")+
+  theme(axis.title.x=element_blank(), axis.title.y=element_blank(),
+        panel.grid.major.y=element_line(colour="#babfc4"),
+        panel.background=element_blank(), panel.grid.major.x=element_blank(),
+        axis.ticks.y = element_blank())
