@@ -1,5 +1,4 @@
 library(readxl)
-library(streamgraph)
 library(ggplot2)
 library(tibble)
 library(tidyverse)
