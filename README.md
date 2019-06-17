@@ -15,7 +15,7 @@ I'm using below sources:
 <br>https://gindi.pl/
 <br>Magazyn Pismo
 <br>https://www.jpf.com.pl/
-
+<br>information from authors
 
 Solved, somehow, problem with pre-second war authors. They mostly published in daily and weekly magazines and data is... well, there's no neat database, so:
 <br>1.If I can't tell exact/aprox. number of issues with published comics, title is counted as '1' in one year.
