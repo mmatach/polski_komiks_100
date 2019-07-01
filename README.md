@@ -22,7 +22,7 @@ First comic in Poland was published in 1919. I was interested in how polish comi
 <br>2.Weekly drawings for Ha-Ga's cartoons are counted as '50' because according to Wikipedia she published two drawings in each of weekly edition of a magazine.
 <br>3.Sometimes dates were givex as aprox. so in such cases I evenly distributed number of comics throughout whole period in which magazine/newspaper existed or comic was printed.
 
-<br>*Is that number an error?' section*
+<br>*"Is that number an error?" section*
 <br>1.Struzik Franciszek's comic really had over 2000+ issues. It was a daily comic. Yes, just one title.
 <br>2.Christa Janusz was very prolific author of newspaper comics, later he moved into album format.
 <br>3.Walentynowicz Marian also published in newspapers.
