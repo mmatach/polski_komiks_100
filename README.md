@@ -7,7 +7,7 @@ First comic in Poland was published in 1919. I was interested in how polish comi
 <br>-Wikipedia
 <br>-https://gindi.pl/
 <br>-Magazyn Pismo
-<br>-https://www.jpf.com.pl/
+<br>-https://www.jpf.com.pl/ (for their anthologies)
 <br>-information from authors (I showed the file on the women-only comic group to fill the gaps)
 
 <br>I've counted only things published on paper (so no internet comics). Also no single illustrations, no covers.
