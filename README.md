@@ -10,14 +10,14 @@ First comic in Poland was published in 1919. I was interested in how polish comi
 <br>https://www.jpf.com.pl/
 <br>information from authors (I showed the file on the women-only comic group to fill the gaps)
 
-<br>I counted only things published on paper (so no internet comics). Also no single illustrations, no covers.
+<br>I've counted only things published on paper (so no internet comics). Also no single illustrations, no covers.
 <br>Titles published in Świat Młodych were counted as a whole chapters, not how they were initially published (by 2-3 pages from the chapter in each number of magazine), because they were parts of something bigger, not standalone stories.
 
 <br>Pre-second war authors mostly published comic strips/cartoons in daily and weekly magazines and data are... well, there's no neat database, so I developed a system which isn't perfect because each comic strip is counted as '1' (like a whole album) but that's the price. Data were based on:
 <br>http://www.tytusdezoo.com.pl/xhtml/komiks/komiks.html
 <br>"Dawny komiks polski" reprint series from Wydawnictwo Komiksowe
 <br>Wikipedia
-System:
+<br>My system:
 <br>1.If I couldn't tell exact/aprox. number of issues with published comics, title was counted as '1' in one year.
 <br>2.Weekly drawings for Ha-Ga's cartoons are counted as '50' because according to Wikipedia she published two drawings in each of weekly edition of a magazine.
 <br>3.Sometimes dates were givex as aprox. so in such cases I evenly distributed number of comics throughout whole period in which magazine/newspaper existed or comic was printed.
