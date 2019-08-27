@@ -35,7 +35,6 @@ ggplot(plk_elim15, aes(y=plk_elim15$IloscPrac, x=plk_elim15$Nazwisko)) +
         axis.text.x.bottom = element_text(angle=90, hjust=0.90, vjust=0.4))
 
 #lollipop - whole chart by 90 degrees
-#214667 blue #ee4642 coral ##5a5a5a grey
 ggplot(plk_elim15, aes(y=plk_elim15$IloscPrac, x=fct_rev(plk_elim15$Nazwisko))) + 
   geom_segment( aes(xend=plk_elim15$Nazwisko, yend=0) , size=0.7, color="#214667")  +
   geom_point(size=5, color="#214667", fill=alpha("#214667", 0.2), alpha=0.7, shape=21)+
@@ -45,7 +44,8 @@ ggplot(plk_elim15, aes(y=plk_elim15$IloscPrac, x=fct_rev(plk_elim15$Nazwisko))) 
         axis.ticks.y = element_blank(), axis.ticks.x = element_blank())+
   coord_flip()
 
-#lollipop - whole chart by 90 degrees with color-coded sex
+#lollipop - whole chart by 90 degrees with color-coded sex (but only for 2 types)
+#409685 green #ee4642 coral #787575 grey
 ggplot(plk_elim15, aes(y=plk_elim15$IloscPrac, x=fct_rev(plk_elim15$Nazwisko))) + 
   geom_segment(aes(xend=plk_elim15$Nazwisko, yend=0 ), 
                color=ifelse(plk_elim15$Plec %in% c("M"), "#214667", "#ee4642"), 
@@ -62,3 +62,19 @@ ggplot(plk_elim15, aes(y=plk_elim15$IloscPrac, x=fct_rev(plk_elim15$Nazwisko))) 
         panel.background=element_blank(),  
         axis.ticks.y = element_blank(), axis.ticks.x = element_blank())+
   coord_flip()
+
+#for Adobe, colors for 3 types
+p<-ggplot(plk_elim15, aes(y=IloscPrac, x=fct_rev(Nazwisko), color=Plec)) + 
+  geom_segment(aes(xend=plk_elim15$Nazwisko, yend=0 ), size=0.7) +
+  geom_point(size=5, alpha=0.7, shape=19) +
+  geom_text(aes(label=IloscPrac), size=3, hjust=-1)+
+  geom_text(aes(label=Nazwisko), size=3, hjust=-1)+
+  theme(axis.title.x=element_blank(), axis.title.y=element_blank(),
+        panel.grid.major.y=element_blank(), panel.grid.major.x=element_blank(),
+        panel.background=element_blank(),  
+        axis.ticks.y = element_blank(), axis.ticks.x = element_blank())+
+  coord_flip()
+p
+
+cols <- c("M"="#409685", "K"="#ee4642", "nw"="#787575")
+p+scale_colour_manual(values = cols)
