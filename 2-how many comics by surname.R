@@ -64,11 +64,17 @@ ggplot(plk_elim15, aes(y=plk_elim15$IloscPrac, x=fct_rev(plk_elim15$Nazwisko))) 
   coord_flip()
 
 #for Adobe, colors for 3 types
+library(extrafont)
+font_import()
+loadfonts()
+fonts()
+windowsFonts(Helvetica=windowsFont("TT Helvetica Light"))
+
 p<-ggplot(plk_elim15, aes(y=IloscPrac, x=fct_rev(Nazwisko), color=Plec)) + 
   geom_segment(aes(xend=plk_elim15$Nazwisko, yend=0 ), size=0.7) +
   geom_point(size=5, alpha=0.7, shape=19) +
-  geom_text(aes(label=IloscPrac), size=3, hjust=-1)+
-  geom_text(aes(label=Nazwisko), size=3, hjust=-1)+
+  geom_text(aes(label=IloscPrac), size=3, family="Helvetica", hjust=-1)+
+  geom_text(aes(label=Nazwisko), size=3, family="Helvetica", hjust=-1)+
   theme(axis.title.x=element_blank(), axis.title.y=element_blank(),
         panel.grid.major.y=element_blank(), panel.grid.major.x=element_blank(),
         panel.background=element_blank(),  
