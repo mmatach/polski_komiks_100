@@ -1,8 +1,8 @@
-# Polish comic scene on a 100th Anniversary (work in progress)
+# Polish comic scene on a 100th Anniversary
 *Polska scena komiksowa na 100-lecie*
 
 First comic in Poland was published in 1919. I was interested in how polish comic scene looks right now. How many women are there? How many people actually? To answer these questions I had to collect data by myself from the below sources - manually, not with any website-crawler - because I was combining data from two main databases with additional sources. Also I wanted to do quality check at the same time. It took me months to do this because there are over 3000+ people. I used:
-<br>-http://alejakomiksu.com/autorzy/A/
+<br>-http://alejakomiksu.com/autorzy/A/ (main database)
 <br>-https://www.komiks.gildia.pl/tworcy/
 <br>-Wikipedia
 <br>-https://gindi.pl/
