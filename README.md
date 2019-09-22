@@ -35,6 +35,6 @@ If I couldn't tell exact/aprox. number of issues with published comics, title wa
 <br>Struzik Franciszek's comic really had over 2000+ issues. It was a daily comic. Yes, just one title.
 <br>Christa Janusz was very prolific author of newspaper comics, later he moved into album format.
 <br>Walentynowicz Marian also published in newspapers.
-<br>Gosława-Lipińska Anna 'Ha-Ga''s cartoons are counted as '52' for each year because according to Wikipedia she published two drawings in each of weekly edition of a magazine.
+<br>Gosława-Lipińska Anna 'Ha-Ga'  according to Wikipedia she published two drawings in each of weekly edition of a magazine.
 
 
