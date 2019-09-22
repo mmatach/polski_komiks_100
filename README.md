@@ -31,10 +31,10 @@ If I couldn't tell exact/aprox. number of issues with published comics, title wa
 <br> https://github.com/mmatach/polski_komiks_100 (database & code)
 <br>www.behance.net/mmatach (graphic)
 
-*FAQ*
-<br>1. Struzik Franciszek's comic really had over 2000+ issues. It was a daily comic. Yes, just one title.
-<br>2. Christa Janusz was very prolific author of newspaper comics, later he moved into album format.
-<br>3. Walentynowicz Marian also published in newspapers.
-<br>4. Gosława-Lipińska Anna 'Ha-Ga''s cartoons are counted as '52' for each year because according to Wikipedia she published two drawings in each of weekly edition of a magazine.
+*HOW DID THEY PUBLISH SO MANY COMICS?*
+<br>Struzik Franciszek's comic really had over 2000+ issues. It was a daily comic. Yes, just one title.
+<br>Christa Janusz was very prolific author of newspaper comics, later he moved into album format.
+<br>Walentynowicz Marian also published in newspapers.
+<br>Gosława-Lipińska Anna 'Ha-Ga''s cartoons are counted as '52' for each year because according to Wikipedia she published two drawings in each of weekly edition of a magazine.
 
 
