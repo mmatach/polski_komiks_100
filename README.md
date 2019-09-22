@@ -6,12 +6,12 @@
 
 *SOURCES*
 <br>There is no complete database so I've made one by myself based on below sources:
-- http://alejakomiksu.com/autorzy/A/ (main database)
-- https://www.komiks.gildia.pl/tworcy/
+- Aleja Komiksu http://alejakomiksu.com/autorzy/A/ (main database)
+- Gildia https://www.komiks.gildia.pl/tworcy/ (second database)
 - Wikipedia
-- https://gindi.pl/
-- Magazyn Pismo
-- https://www.jpf.com.pl/ (for their anthologies)
+- Magazyn Pismo https://magazynpismo.pl/
+- Wydawnictwo JPF https://www.jpf.com.pl/
+- Sklep Gindi https://gindi.pl/
 - information from authors (I showed the file on the women-only comic group to fill in the gaps)
 <br>For pre-Second World War authors:
 - http://www.tytusdezoo.com.pl/xhtml/komiks/komiks.html
