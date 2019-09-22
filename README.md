@@ -20,7 +20,7 @@ There is no complete database so I've made one by myself based on below sources:
 *METHODOLOGY*
 <br>I counted only things published on paper (no internet comics). Also no single illustrations, no covers. Titles published in 'Świat Młodych' were counted as a whole chapters, not how they were initially published (by 2-3 pages from the chapter in each number of magazine), because they were parts of something bigger, not standalone stories.
 
-<br>Pre-Second World War authors mostly published comic strips/cartoons in daily and weekly magazines. I developed a system which isn't perfect because each comic strip is counted as '1' (like a whole album).
+Pre-Second World War authors mostly published comic strips/cartoons in daily and weekly magazines. I developed a system which isn't perfect because each comic strip is counted as '1' (like a whole album).
 If I couldn't tell exact/aprox. number of issues with published comics, title was counted as '1' in one year. Sometimes dates were given as aprox. so in such cases I evenly distributed number of comics throughout whole period in which magazine/newspaper existed or particular comic was printed.
 
 *TOOLS*
