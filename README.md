@@ -1,7 +1,7 @@
 # Polish comic scene on a 100th Anniversary
 
 *WHY & WHO?*
-<br>I have loved comic books ever since I was a child. It all started with 'Mickey Mouse' magazine and was strenghtened by Sailor Moon and manga. I was interested in how Polish comic scene looks right now. How many women are there? How many people, in general? To answer these questions I had to collect data by myself from the below sources - manually - because I was combining data from two main databases with additional sources and do quality check at the same time. It took me some time. I hope you will find effects interesting.
+<br>I have loved comic books ever since I was a child. It all started with 'Mickey Mouse' magazine and was strengthened by Sailor Moon and manga. I was interested in how Polish comic scene looks right now. How many women are there? How many people, in general? To answer these questions I had to collect data by myself from the below sources - manually - because I was combining data from two main databases with additional sources and do quality check at the same time. It took me some time. I hope you will find effects interesting.
 Twitter: @m_matach 
 
 *SOURCES*
