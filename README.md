@@ -1,3 +1,5 @@
+*infographic for this project can be found under: https://www.behance.net/gallery/84739043/The-shape-of-polish-comic-scene*
+
 # Polish comic scene on the 100th Anniversary
 *First comic in Poland was published in 1919 short after gaining independence.*
 
