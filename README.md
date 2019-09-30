@@ -42,10 +42,38 @@ If I couldn't tell exact/approx. number of issues with published comics, title w
 <br> https://github.com/mmatach/polski_komiks_100 (database & code)
 <br>www.behance.net/mmatach (graphic)
 
-*HOW DID THEY PUBLISH SO MANY COMICS?*
-<br>Christa Janusz was very prolific author of newspaper comics, later he moved into album format.
-<br>Gosława-Lipińska Anna 'Ha-Ga' according to Wikipedia published two drawings in each of weekly edition of a magazine.
-<br>Struzik Franciszek's comic really had over 2000+ issues. It was a daily comic. Yes, just one title.
-<br>Walentynowicz Marian also published in newspapers.
+*infografika znajduje się pod: https://www.behance.net/gallery/84739043/The-shape-of-Polish-comic-scene*
 
+# Polska scena komiksowa na jej 100-lecie
+
+*KTO i DLACZEGO?*
+<br>Kocham komiksy od kiedy byłam dzieckiem. Wszystko zaczęło się z magazynem „Myszką Mickey” i zostało wzmocnione „Czarodziejką z Księżyca” i mangą. Zainteresowało mnie jak polska scena komiksowa wygląda teraz. Ile kobiet w niej uczestniczy? Ilu ludzi w ogóle? By odpowiedzieć sobie na te pytania musiałam pozbierać dane - własnoręcznie - ponieważ łaczyłam dane z dwóch głównych baz danych i innych mniejszy źródeł oraz od razu sprawdzałam ich jakość. Zajęło mi to trochę czasu. Mam nadzieję, że uznacie efekt za interesujący..
+<br>Twitter: @m_matach 
+
+*ŹRÓDŁA*
+<br>Nie ma jednej kompletnej bazy danych więc sama stworzyłam taką bazując na poniższych źródłach:
+- Aleja Komiksu http://alejakomiksu.com/autorzy/A/ (główna baza danych)
+- Gildia https://www.komiks.gildia.pl/tworcy/ (druga baza danych)
+- Wikipedia
+- magazyn „Pismo” https://magazynpismo.pl/
+- wydawnictwo JPF https://www.jpf.com.pl/
+- sklep Gindi https://gindi.pl/
+- informacje od autorek (skompilowane na podstawie wpisów na kobiecej grupie komiksowej)
+<br>Dla twórców i twórczyń sprzed II wojny światowej:
+- http://www.tytusdezoo.com.pl/xhtml/komiks/komiks.html
+- seria „Dawny komiks polski" od Wydawnictwo Komiksowe
+
+*METODOLOGIA*
+<br>Policzone zostały tylko komiksy wydane na papierze (bez komiksów internetowych, pojedynczych ilustracji czy okładek). Tytuły publikowane w „Świecie Młodych” zostały policzone jako całe rozdziały/historie, nie tak jak były pierwotnie publikowane (po 2-3 strony z każdej rozdziału w każdym numerze magazynu), ponieważ był częścią czegoś większego, nie osobnymi historiami.
+
+Autorzy sprzed II wojny światowej publikowali paski komiksowe/obrazki w gazetach codziennych i tygodnikach. Stworzyłam system, który nie jest idealny, ponieważ traktuje każdy pasek jako '1' (podobnie jak cały album komiksowy).
+Jeśli nie byłam w stanie podać dokładnej/przybliżonej liczby numerów z wydanym komiksem, tytuł był liczony jako '1' w danym roku. Czasami daty wydań były podane w przybliżeniu więc wtedy równomernie rozkładałam ilość komiksów w obrębie całego okresu, w którym magazyn/gazeta istaniała lub dany komiks był drukowany.
+
+
+*NARZĘDZIA*
+<br>Wszystko zostało policzone przy użyciu R z paczkami tidyverse i ggplot2 i dopieszczone w Adobe Illustrator.
+
+*STRONY PROJEKTU*
+<br>https://github.com/mmatach/polski_komiks_100 (baza danych i kod)
+<br>www.behance.net/mmatach (grafika)
 
