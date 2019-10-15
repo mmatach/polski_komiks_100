@@ -47,6 +47,7 @@ plk_os_df_rbind<-cbind(plk_os_df_rbind, rok_num)
 plk_os_df_rbind$rok<-NULL
 
 ##code for Spiral chart
+##original idea: https://stackoverflow.com/questions/52939337/how-to-create-a-time-series-spiral-graph-using-r
 #change position of each type K/M/nw
 plk_spread<-spread(plk_os_df_rbind, plec, ilosc)
 #new column - adding
